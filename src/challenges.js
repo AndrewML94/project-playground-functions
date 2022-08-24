@@ -15,7 +15,10 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(nomes) {
-
+  let primeiroNome = nomes[0];
+  let ultimoNome = nomes[nomes.length-1];
+  let virgula = ',';
+  return ultimoNome.toString() + virgula + ' ' + primeiroNome.toString();
 }
 
 // Desafio 5
