@@ -22,8 +22,16 @@ function concatName(nomes) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let vitoria = 0;
+  let empate = 0;
+  if (wins >= 1) {
+    vitoria = wins * 3;
+  }
+  if (ties >= 1) {
+    empate = ties * 1;
+  }
+  return vitoria + empate;
 }
 
 // Desafio 6
