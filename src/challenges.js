@@ -16,7 +16,7 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(nomes) {
   let primeiroNome = nomes[0];
-  let ultimoNome = nomes[nomes.length-1];
+  let ultimoNome = nomes[nomes.length -1];
   let virgula = ',';
   return ultimoNome.toString() + virgula + ' ' + primeiroNome.toString();
 }
@@ -38,9 +38,9 @@ function footballPoints(wins, ties) {
 function highestCount(numero) {
   let maior = Math.max.apply(Math, numero);
   let cont = 0;
-  for (let index = 0; index < numero.length; index+=1) {
+  for (let index = 0; index < numero.length; index +=1) {
     if (numero[index] === maior) {
-      cont+=1;
+      cont +=1;
     }
   }
   return cont;
@@ -61,8 +61,23 @@ function catAndMouse(mouse, cat1, cat2) {
   return posicao;
 }
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numero) {
+  let palavra = []
+  for (let index = 0; index < numero.length; index +=1) {
+    if (numero[index] % 5 === 0 && numero[index] % 3 === 0) {
+      palavra.push('fizzBuzz');
+    }
+    else if (numero[index] % 3 === 0) {
+      palavra.push('fizz');
+    }
+    else if (numero[index] % 5 === 0) {
+      palavra.push('buzz');
+    }
+    else {
+      palavra.push('bug!');
+    }
+  }
+  return palavra;
 }
 
 // Desafio 9
