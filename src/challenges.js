@@ -47,10 +47,19 @@ function highestCount(numero) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let posicao;
+  if (mouse - cat1 > mouse - cat2) {
+    posicao = 'cat1';
+  }
+  if (mouse - cat2 > mouse - cat1) {
+    posicao = 'cat2';
+  }
+  if (mouse - cat1 === cat2 - mouse) {
+    posicao = 'os gatos trombam e o rato foge';
+  }
+  return posicao;
 }
-
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
