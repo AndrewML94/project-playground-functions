@@ -16,9 +16,21 @@ function generatePhoneNumber(numbers) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let soma1 = lineA + lineB;
+  let soma2 = lineA + lineC;
+  let soma3 = lineB + lineC;
+  let absoluto1 = Math.abs(lineA, lineB)
+  let absoluto2 = Math.abs(lineA, lineC)
+  let absoluto3 = Math.abs(lineB, lineC)
+  if (lineC < soma1 && lineC > absoluto1 || lineB < soma2 && lineB > absoluto2 || lineA < soma3 && lineA > absoluto3) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
+
 
 // Desafio 13
 function hydrate() {
